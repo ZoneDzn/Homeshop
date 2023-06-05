@@ -1,0 +1,516 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+:root {
+  --primary-color: #ff6b6b;
+  --secondary-color: #794afa;
+  --secondary-dark-color: #453c5c;
+
+  --laranja-color: #FF8C00;
+  --blue-color: #004abe;
+  --bg-gray: #E8E8E8;
+  --bg--color: #212529;
+  --text-gray: #4a4a4a;
+  --color-primary: #F9CACD.;
+  --color-text-primary: #ED4D1B;
+  --white: #ffffff;
+  --main-color: #34e7f8;
+  --color-black: #0a021c;
+  --text-text: #gf;
+  --text-light-gray: #aaa;
+  --star-yellow: #ffbb3a --font-small: 13px;
+  --font-smaller: 11px;
+
+  --trans-background-color: background-color .3s, color .3s;
+  --trans-background: background-color .3s;
+  --trans-color: color .3s;
+}
+
+body {
+  background-color: var(--bg--gray);
+  padding: 0;
+  border: 1px solid var(--color-black);
+  overflow-x: hidden;
+}
+
+/* Estilos para o cabeçalho */
+.main-links li {
+
+  margin: 10px;
+  padding-left: 180px;
+  display: inline-block;
+}
+
+li.header1 {
+  color: #FFFFFF
+}
+
+ul.header1 {
+  margin-bottom: 10px;
+}
+
+.header1 {
+  background-color: var(--laranja-color);
+  width: 1525px;
+  height: 60px;
+}
+
+.header2 {
+  background-color: var(--color-primary);
+  padding: 10px;
+  border: 0.1px solid var(--color-black);
+  margin-bottom: 60px;
+  height: 100px;
+  border-bottom: 2px solid #000
+}
+
+header {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.header2 .navbar-nav {
+  margin: 0 auto;
+  /* Adiciona margem automática para centralizar os itens */
+  display: flex;
+  /* Aplica um layout flexível */
+  justify-content: center;
+  /* Alinha os itens horizontalmente ao centro */
+}
+
+.header2 .navbar-nav .nav-item {
+  margin-right: 10px;
+  /* Adiciona um espaçamento entre os itens */
+}
+
+.header2 .navbar-nav .nav-link:hover {
+  color: var(--laranja-color);
+  /* Define a cor do texto dos links ao passar o mouse */
+}
+
+.header2 .form-control {
+  width: 250px;
+  /* Define a largura do campo de pesquisa */
+}
+
+.header2 .form-search {
+  display: flex;
+  align-items: center;
+}
+
+.header2 .form-search .form-control {
+  flex: 1;
+}
+
+.header2 .form-search .btn {
+  margin-left: 10px;
+}
+
+.header2 .navbar-nav {
+  display: flex;
+  justify-content: center;
+}
+
+.header2 .navbar-nav .nav-item {
+  margin-right: 10px;
+}
+
+.header2 .navbar-nav .nav-link {
+  color: #000;
+}
+
+.header2 .navbar-nav .nav-link:hover {
+  color: var(--laranja-color);
+}
+
+.header3 {
+  align-items: center;
+  margin-left: 50px;
+}
+
+.sobresection {
+  align-items: center;
+  margin-left: 50px;
+}
+
+.sobresection2 {
+  align-items: center;
+  margin-left: 50px;
+}
+
+.categories {
+  display: flex;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 10px;
+  justify-content: center;
+  /* Centraliza as categorias horizontalmente */
+}
+
+.category {
+  text-align: center;
+  margin: 10px;
+  /* Espaçamento entre as categorias */
+}
+
+.category img {
+  width: 200px;
+  /* Ajuste o tamanho da imagem conforme necessário */
+  height: 200px;
+  border-radius: 50%;
+  /* Define a forma circular da imagem */
+}
+
+.category span {
+  display: block;
+  margin-top: 10px;
+  /* Espaçamento entre a imagem e o nome da categoria */
+  font-size: 16px;
+  /* Ajuste o tamanho da fonte do nome da categoria */
+}
+
+.catalogo {
+  text-align: center;
+}
+
+.filter-menu {
+  margin-bottom: 20px;
+}
+
+.filter-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.filter-menu li {
+  display: inline;
+  margin-right: 10px;
+}
+
+.filter-menu a {
+  text-decoration: none;
+  padding: 5px 10px;
+  background-color: #eee;
+  color: #333;
+}
+
+.items {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.item {
+  width: 200px;
+  height: 200px;
+  background-color: #ccc;
+  margin: 10px;
+  display: none;
+}
+
+/* Exemplo de estilos para cada critério de filtro */
+.tamanho {
+  background-color: yellow;
+}
+
+.cor {
+  background-color: green;
+}
+
+.preco {
+  background-color: blue;
+}
+
+.paragrafo {
+  text-align: center;
+}
+
+
+section.slider {
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+  padding: 0 !important;
+  overflow-x: hidden;
+}
+
+.slider-content {
+  width: 400%;
+  height: auto;
+  display: flex;
+}
+
+.slider-content input,
+.img-mobile {
+  display: none;
+}
+
+.slide-box {
+  width: 25%;
+  height: auto;
+  position: relative;
+  text-align: center;
+  transition: 1s;
+}
+
+.slide-box img {
+  width: 70%;
+  height: 80%;
+}
+
+.nav-manual,
+.nav-auto {
+  position: absolute;
+  width: 100%;
+  margin-top: 35%;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-manual .manual-btn,
+.nav-auto div {
+  border: 1px solid var(--color-black);
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.nav-manual .manual-btn:not(:last-child),
+.nav-auto div:not(:last-child) {
+  margin-right: 5px;
+}
+
+.nav-manual .manual-btn:hover {
+  background-color: var(--color-text-primary);
+}
+
+#radio1:checked~.nav-auto .auto-btn1 {
+  background-color: var(--color-text-primary);
+}
+
+#radio2:checked~.nav-auto .auto-btn2 {
+  background-color: var(--color-text-primary);
+}
+
+#radio3:checked~.nav-auto .auto-btn3 {
+  background-color: var(--color-text-primary);
+}
+
+#radio1:checked~.primeiro {
+  margin-left: 0%;
+}
+
+#radio2:checked~.primeiro {
+  margin-left: -25%;
+}
+
+#radio3:checked~.primeiro {
+  margin-left: -50%;
+}
+
+.navbar-brand {
+  font-weight: bold;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-nav-scroll {
+  max-height: 100px;
+}
+
+.nav-link,
+.dropdown-item {
+  color: #212529;
+}
+
+.dropdown-item:hover {
+  background-color: var(--white);
+}
+
+.btn-login .shopping-cart {
+  display: flex;
+  align-items: center;
+}
+
+.icone-login {
+  height: 50px;
+}
+
+
+.container-catalogo {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: space-between;
+}
+
+.container-centralizado {
+  display: flex;
+  color: #fff;
+}
+
+/* catalogo */
+.product {
+  display: inline-block;
+  width: 200px;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: center;
+  cursor: pointer;
+}
+
+.category {
+  margin: 20px 0;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.selected-category {
+  background-color: #ccc;
+}
+
+
+
+/* Estilos para a seção principal */
+
+.text-primary {
+  color: var(--bg-gray);
+}
+
+.decoration {
+  text-decoration: underline;
+}
+
+.catalogo-section {
+  display: flex;
+  justify-content: center;
+  padding: 50px 0;
+}
+
+.cards {
+  display: flex;
+  gap: 20px;
+}
+
+.cards article {
+  width: 250px;
+  background-color: #fff;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+}
+
+.cards img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.cards strong {
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* Estilos para o rodapé */
+footer {
+  background-color: #212529;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 0;
+}
+
+footer div {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.iconeabaixo {
+  height: 200px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+footer img {
+  max-width: 100%;
+}
+
+form {
+  margin-top: 10px;
+}
+
+label {
+  display: block;
+}
+
+input[type="text"] {
+  padding: 10px;
+  width: 400px;
+}
+
+button[type="submit"] {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+p {
+  margin-top: 10px;
+  font-size: 12px;
+}
+
+
+nav {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+nav a {
+  color: #fff;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+form input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.flecha {
+  height: 10%;
+  width: 10000%;
+}
