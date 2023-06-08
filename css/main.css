@@ -39,28 +39,27 @@ body {
   overflow-x: hidden;
 }
 
-/* Estilos para o cabeçalho */
+/* primeiro header */
 .main-links li {
-
   margin: 10px;
   padding-left: 180px;
   display: inline-block;
 }
 
-li.header1 {
-  color: #FFFFFF
-}
-
-ul.header1 {
-  margin-bottom: 10px;
-}
-
 .header1 {
   background-color: var(--laranja-color);
-  width: 1525px;
   height: 60px;
+  padding: 10px 0;
 }
 
+.header1 .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* segundo header */
 .header2 {
   background-color: var(--color-primary);
   padding: 10px;
@@ -78,26 +77,20 @@ header {
 
 .header2 .navbar-nav {
   margin: 0 auto;
-  /* Adiciona margem automática para centralizar os itens */
   display: flex;
-  /* Aplica um layout flexível */
   justify-content: center;
-  /* Alinha os itens horizontalmente ao centro */
 }
 
 .header2 .navbar-nav .nav-item {
   margin-right: 10px;
-  /* Adiciona um espaçamento entre os itens */
 }
 
 .header2 .navbar-nav .nav-link:hover {
   color: var(--laranja-color);
-  /* Define a cor do texto dos links ao passar o mouse */
 }
 
 .header2 .form-control {
   width: 250px;
-  /* Define a largura do campo de pesquisa */
 }
 
 .header2 .form-search {
@@ -113,22 +106,6 @@ header {
   margin-left: 10px;
 }
 
-.header2 .navbar-nav {
-  display: flex;
-  justify-content: center;
-}
-
-.header2 .navbar-nav .nav-item {
-  margin-right: 10px;
-}
-
-.header2 .navbar-nav .nav-link {
-  color: #000;
-}
-
-.header2 .navbar-nav .nav-link:hover {
-  color: var(--laranja-color);
-}
 
 .header3 {
   align-items: center;
@@ -147,35 +124,28 @@ header {
 
 .categories {
   display: flex;
-  display: flex;
   flex-wrap: wrap;
-  align-items: center;
-  margin: 10px;
   justify-content: center;
-  /* Centraliza as categorias horizontalmente */
+  align-items: center;
 }
 
 .category {
   text-align: center;
   margin: 10px;
-  /* Espaçamento entre as categorias */
 }
 
 .category img {
   width: 200px;
-  /* Ajuste o tamanho da imagem conforme necessário */
   height: 200px;
   border-radius: 50%;
-  /* Define a forma circular da imagem */
 }
 
 .category span {
   display: block;
   margin-top: 10px;
-  /* Espaçamento entre a imagem e o nome da categoria */
   font-size: 16px;
-  /* Ajuste o tamanho da fonte do nome da categoria */
 }
+
 
 .catalogo {
   text-align: center;
